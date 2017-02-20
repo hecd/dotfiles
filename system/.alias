@@ -1,0 +1,46 @@
+###########################################
+# Edit common files.
+###########################################
+alias ev="vim ~/.vimrc"
+alias et="vim ~/.tmux.conf"
+alias ez="vim ~/.zshrc"
+alias eg="vim ~/.gitconfig"
+alias ea="vim $DOTFILES_DIR/system/.alias"
+
+alias epm="vim ~/.procmailrc"
+alias evl="vim ~/data/tech/learning/vim.txt"
+alias eal="vim ~/data/tech/learning/ansible.txt"
+
+###########################################
+# Tmux
+###########################################
+alias ta="tmux attach -t "
+alias tl="tmux list-sessions"
+alias toff="tmux kill-server"
+alias tkill="tmux kill-session -t "
+alias tn="tmux new -s "
+
+###########################################
+# Nice-to-haves.
+###########################################
+alias slog="sudo tail -f /var/log/syslog"
+alias afk="xdg-screensaver lock"
+
+alias off="shutdown now"
+alias reboot="shutdown -r now"
+alias :q="exit"
+
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+
+alias gnucash="LANGUAGE=sv_SE.UTF-8 LANG=sv_SE.UTF-8 gnucash"
+alias rz="source ~/.zshrc"
+alias serve="python -m SimpleHTTPServer"
+
+###########################################
+# Git
+###########################################
+alias gc="git commit -m"

@@ -1,0 +1,5 @@
+SUBJECT=`formail -xSubject:`
+FROM=`formail -xFrom:`
+:0 c
+*^To:.*root.*
+| formail -I "" | mail -r "$FROM" -s "$SUBJECT" $EXTERNAL_EMAIL

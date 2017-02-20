@@ -1,0 +1,11 @@
+[user]
+  email = hecd744@gmail.com
+  name = hecd
+
+[core]
+  excludesfile = $HOME/.gitignore
+  autocrlf = input
+  editor = vim
+
+[push]
+  default = simple
