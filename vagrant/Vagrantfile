@@ -1,0 +1,18 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# This Vagrantfile configures VMs globally. Settings can be overwritten with project specific settings. 
+Vagrant.configure(2) do |config|
+  config.vm.define :g_vmcfg do | g_vmcfg |
+    g_vmcfg.ssh.private_key_path = #{ENV['HOME']}/.ssh/vagrantkey"
+    g_vmcfg.ssh.insert_key = false
+  end
+
+  config.vm.provider "virtualbox" do |vbox|
+    vbox.customize ["modifyvm", :id, "--vram", "128"]
+  end
+
+  config.vm.provision "file", source: "#{ENV['HOME']}/.ssh/vagrantkey.pub", destination: "~/.ssh/authorized_keys"
+  config.vm.network "public_network", bridge: "br0"
+end
+
