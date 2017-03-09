@@ -39,6 +39,7 @@ alias ..5="cd ../../../../.."
 alias gnucash="LANGUAGE=sv_SE.UTF-8 LANG=sv_SE.UTF-8 gnucash"
 alias rz="source ~/.zshrc"
 alias serve="python -m SimpleHTTPServer"
+alias del="sed '/^$/d'"
 
 ###########################################
 # Git
