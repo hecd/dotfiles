@@ -27,6 +27,8 @@ source "$DOTFILES_DIR/install/apt.sh"
 source "$DOTFILES_DIR/install/oh-my-zsh.sh"
 source "$DOTFILES_DIR/install/vundle.sh"
 
+[ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh¬
+
 echo
 echo
 echo "Installation completed!"
