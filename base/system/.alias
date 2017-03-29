@@ -5,8 +5,8 @@ alias ev="vim ~/.vimrc"
 alias et="vim ~/.tmux.conf"
 alias ez="vim ~/.zshrc"
 alias eg="vim ~/.gitconfig"
-alias ea="vim $DOTFILES_DIR/base/system/.alias"
-
+# Edit this file, readlink since its a symlink.
+alias ea="vim `readlink -f $0`"
 alias epm="vim ~/.procmailrc"
 alias evl="vim ~/data/tech/learning/vim.txt"
 alias eal="vim ~/data/tech/learning/ansible.txt"
