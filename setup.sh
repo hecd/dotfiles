@@ -26,6 +26,7 @@ source "$DOTFILES_DIR/base/system/.env"
 source "$DOTFILES_DIR/base/install/apt.sh"
 source "$DOTFILES_DIR/base/install/oh-my-zsh.sh"
 source "$DOTFILES_DIR/base/install/vundle.sh"
+source "$DOTFILES_DIR/base/install/tmux.sh"
 
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
 
