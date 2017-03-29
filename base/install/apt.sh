@@ -1,4 +1,5 @@
 # Generate required locale before installing packages.
+# TODO: Generate locale on a need basis. Dont always generate (time waste)
 sudo sed -i s/"# sv_SE.UTF-8 UTF-8"/"sv_SE.UTF-8 UTF-8"/ /etc/locale.gen
 sudo locale-gen
 

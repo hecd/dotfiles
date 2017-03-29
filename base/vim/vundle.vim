@@ -10,8 +10,12 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-obsession'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'pearofducks/ansible-vim'
-Plugin 'Valloric/YouCompleteMe'
+
+if filereadable( expand("$DOTFILES_DIR/.devmode") )
+  Plugin 'pearofducks/ansible-vim'
+  Plugin 'Valloric/YouCompleteMe'
+endif 
+
 call vundle#end()
 
 " Required by vundle.

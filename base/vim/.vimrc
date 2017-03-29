@@ -1,8 +1,8 @@
 set nocompatible
 
 " Load plugins.
-source $DOTFILES_DIR/vim/vundle.vim
-source $DOTFILES_DIR/vim/keymappings.vim
+source $DOTFILES_DIR/base/vim/vundle.vim
+source $DOTFILES_DIR/base/vim/keymappings.vim
 
 set encoding=utf-8
 syntax on
