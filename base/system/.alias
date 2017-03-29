@@ -5,7 +5,7 @@ alias ev="vim ~/.vimrc"
 alias et="vim ~/.tmux.conf"
 alias ez="vim ~/.zshrc"
 alias eg="vim ~/.gitconfig"
-alias ea="vim $DOTFILES_DIR/system/.alias"
+alias ea="vim $DOTFILES_DIR/base/system/.alias"
 
 alias epm="vim ~/.procmailrc"
 alias evl="vim ~/data/tech/learning/vim.txt"
