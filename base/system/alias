@@ -2,6 +2,7 @@
 # Edit common files.
 ###########################################
 alias ev="vim ~/.vimrc"
+alias evundle="vim $DOTFILES_DIR/base/vim/vundle.vim"
 alias et="vim ~/.tmux.conf"
 alias ez="vim ~/.zshrc"
 alias eg="vim ~/.gitconfig"
