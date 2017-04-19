@@ -17,7 +17,6 @@ ln -sfv -T "$DOTFILES_DIR/base/git/gitignore" ~/.gitignore
 
 ln -sfv -T "$DOTFILES_DIR/base/tmux/tmux.conf" ~/.tmux.conf
 
-# TODO: Warn if $EXTERNAL_EMAIL is missing. 
 ln -sfv -T "$DOTFILES_DIR/base/rc/inputrc" ~/.inputrc
 ln -sfv -T "$DOTFILES_DIR/base/rc/procmailrc" ~/.procmailrc
 

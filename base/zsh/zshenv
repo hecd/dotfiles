@@ -6,5 +6,6 @@ for DOTFILE in "$SYSTEM_PATH/"{function,env,path,alias}; do
 done
 unset DOTFILE
 
-# Load non version controlled environment variables and scripts.
-[ -f "$EXTRA_DIR/.env" ] && source $EXTRA_DIR/.env
+# Load non version controlled environment variables.
+local EXTRA_ENV_PATH="$EXTRA_DIR/system/env"
+[ -f "$EXTRA_ENV_PATH" ] && source "$EXTRA_ENV_PATH"
