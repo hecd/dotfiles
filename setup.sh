@@ -34,6 +34,7 @@ if [ "$1" = "dev" ] ; then
   touch "$DOTFILES_DIR/.devmode"
   ln -sfv "$DOTFILES_DIR/devtools/vim/ycm/.ycm_extra_conf.py" ~
   "$DOTFILES_DIR/devtools/install/vundle.sh"
+  "$DOTFILES_DIR/devtools/install/eclipse.sh"
 fi
 
 echo
