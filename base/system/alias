@@ -22,6 +22,14 @@ alias tkill="tmux kill-session -t "
 alias tn="tmux new -s "
 
 ###########################################
+# vagrant
+###########################################
+alias vu="vagrant up" 
+alias vh="vagrant halt"
+alias vssh="vagrant ssh"
+alias vd="vagrant destroy"
+
+###########################################
 # Nice-to-haves.
 ###########################################
 alias slog="sudo tail -f /var/log/syslog"
