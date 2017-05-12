@@ -50,7 +50,7 @@ alias rz="source ~/.zshrc"
 alias serve="python -m SimpleHTTPServer"
 alias del="sed '/^$/d'"
 alias week="echo Current week number: $(date +%V)"
-
+alias install="sudo apt-get install"
 alias cpwd="pwd | xclip"
 ###########################################
 # Git
