@@ -12,6 +12,7 @@ alias epm="vim ~/.procmailrc"
 alias evl="vim ~/data/tech/learning/vim.txt"
 alias eal="vim ~/data/tech/learning/ansible.txt"
 alias eh="sudo vim /etc/hosts"
+alias esshconfig="vim ~/.ssh/config"
 ###########################################
 # Tmux
 ###########################################
