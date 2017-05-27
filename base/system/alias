@@ -53,6 +53,8 @@ alias del="sed '/^$/d'"
 alias week="echo Current week number: $(date +%V)"
 alias si="sudo apt-get install"
 alias cpwd="pwd | xclip"
+
+alias without-comments="grep -o '^[^#]*' "
 ###########################################
 # Git
 ###########################################
