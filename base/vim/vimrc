@@ -26,7 +26,7 @@ set shiftwidth=2
 
 " Show whitespace characters.
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,trail:·
 
 " Indent when moving to next line.
 set autoindent
