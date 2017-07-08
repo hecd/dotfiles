@@ -1,6 +1,6 @@
 export DOTFILES_DIR=$HOME/dotfiles
-export EXTRA_DIR=$HOME/extra
+export DATA_DIR=$HOME/data
+export EXTRA_DIR=$DATA_DIR/extra
 export PACKER_CACHE_DIR=$HOME/cache/packer
 export VAGRANT_HOME=$HOME/cache/vagrant
 export ISO_DIR=$HOME/ISO
-export DATA_DIR=$HOME/data
