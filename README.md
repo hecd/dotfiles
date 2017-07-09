@@ -1,10 +1,10 @@
 # Description
-This repository should be cloned into the directory ~/dotfiles.
+This repository should be cloned into the directory ~/data/dotfiles.
 This project has two targets:
 - base; typically installed on all machines (including servers)
 - dev; typically installed on development machines only.
 
-Private information and scripts should be placed in ~/extra. Programmatic setup is done in ~/extra/setup.sh (called from this project).
+Private information and scripts should be placed in ~/data/extra which contains the file "setup.sh" where machine specific configuration can be executed.
 
 # Usage
 git clone https://github.com/hecd/dotfiles.git
