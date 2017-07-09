@@ -2,9 +2,9 @@ sudo apt-get install openjdk-8-jre openjdk-8-jdk
 
 DOWNLOAD_URL="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/R/eclipse-cpp-neon-R-linux-gtk-x86_64.tar.gz&r=1"
 
-ECLIPSE_BIN_PATH=$HOME/bin/eclipse-cdt
+ECLIPSE_BIN_PATH="$LOCAL_DIR/bin/eclipse-cdt"
 ECLIPSE_TAR_FILE="$ECLIPSE_BIN_PATH/eclipse-neon.tar.gz"
-LINK_PATH="$HOME/bin/eclipse"
+LINK_PATH="$LOCAL_DIR/bin/eclipse"
 
 rm -rf "$LINK_PATH"
 rm -rf "$ECLIPSE_BIN_PATH"
