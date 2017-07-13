@@ -37,6 +37,7 @@ if [ "$1" = "dev" ] ; then
   source "$DOTFILES_DIR/devtools/install/vundle.sh"
   source "$DOTFILES_DIR/devtools/install/eclipse.sh"
   source "$DOTFILES_DIR/devtools/install/vagrant.sh"
+  source "$DOTFILES_DIR/devtools/install/virtualbox.sh"
 fi
 
 echo
