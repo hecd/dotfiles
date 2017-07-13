@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# This script is idempotent, i.e. safe to run multiple times.
-
 rm -f .devmode
 
 export DOTFILES_DIR=`dirname $(readlink -f $0)`
 
-# Create symlinks. 
+# Create symlinks.
 ln -sfv -T "$DOTFILES_DIR/base/zsh/zshrc" ~/.zshrc
 ln -sfv -T "$DOTFILES_DIR/base/zsh/zshenv" ~/.zshenv
 

@@ -6,6 +6,13 @@ for DOTFILE in "$SYSTEM_PATH/"{function,env,path,alias}; do
 done
 unset DOTFILE
 
+if [ -f "$DOTFILES_DIR/.devmode" ]; then
+  for DOTFILE in "$DOTFILES_DIR/devtools/system/"{function,env,path,alias}; do
+    [ -f "$DOTFILE" ] && source "$DOTFILE"
+  done
+  unset DOTFILE
+fi
+
 # Load non version controlled environment variables.
 local EXTRA_ENV_PATH="$EXTRA_DIR/system/env"
 [ -f "$EXTRA_ENV_PATH" ] && source "$EXTRA_ENV_PATH"
