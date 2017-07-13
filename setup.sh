@@ -4,7 +4,7 @@
 
 rm -f .devmode
 
-DOTFILES_DIR=`dirname $(readlink -f $0)`
+export DOTFILES_DIR=`dirname $(readlink -f $0)`
 
 # Create symlinks. 
 ln -sfv -T "$DOTFILES_DIR/base/zsh/zshrc" ~/.zshrc
@@ -34,8 +34,8 @@ source "$DOTFILES_DIR/base/install/tmux.sh"
 if [ "$1" = "dev" ] ; then
   touch "$DOTFILES_DIR/.devmode"
   ln -sfv "$DOTFILES_DIR/devtools/vim/ycm/.ycm_extra_conf.py" ~
-  "$DOTFILES_DIR/devtools/install/vundle.sh"
-  "$DOTFILES_DIR/devtools/install/eclipse.sh"
+  source "$DOTFILES_DIR/devtools/install/vundle.sh"
+  source "$DOTFILES_DIR/devtools/install/eclipse.sh"
 fi
 
 echo
