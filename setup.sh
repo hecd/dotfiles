@@ -23,6 +23,7 @@ ln -sfv -T "$DOTFILES_DIR/base/rc/procmailrc" ~/.procmailrc
 # Source environment so environment variables such as $DOTFILES_DIR can be used in install scripts.
 source "$DOTFILES_DIR/base/system/env"
 
+source "$DOTFILES_DIR/base/install/locale.sh"
 source "$DOTFILES_DIR/base/install/apt.sh"
 source "$DOTFILES_DIR/base/install/oh-my-zsh.sh"
 source "$DOTFILES_DIR/base/install/vundle.sh"
