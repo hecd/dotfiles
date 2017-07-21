@@ -7,3 +7,5 @@ export LOCAL_DIR=$HOME/local
 export PACKER_CACHE_DIR=$LOCAL_DIR/packer
 export VAGRANT_HOME=$LOCAL_DIR/vagrant
 export ISO_DIR=$LOCAL_DIR/ISO
+
+export MACHINE_SPECIFIC_DIR=$EXTRA_DIR/machine_specific/`hostname`
