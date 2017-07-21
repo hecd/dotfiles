@@ -53,6 +53,7 @@ alias serve="python -m SimpleHTTPServer"
 alias del="sed '/^$/d'"
 alias week="echo Current week number: $(date +%V)"
 alias si="sudo apt-get install"
+alias sug="sudo apt-get update && sudo apt-get upgrade"
 alias cpwd="pwd | xclip"
 
 alias without-comments="grep -o '^[^#]*' "
