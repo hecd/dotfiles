@@ -57,6 +57,8 @@ alias sug="sudo apt-get update && sudo apt-get upgrade"
 alias cpwd="pwd | xclip"
 
 alias without-comments="grep -o '^[^#]*' "
+
+alias savefw="sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null; sudo ip6tables-save | sudo tee /etc/iptables/rules.v6 > /dev/null;"
 ###########################################
 # Git
 ###########################################
