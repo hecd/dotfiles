@@ -1,19 +1,23 @@
+# Parameter 1 should be a directory possibly containing files where filename is included in variable FILES below.
+function source_system_config_files
+{
+  PARENT_DIRECTORY="$1"
+  FILES=("function" "env" "path" "alias")
+  for CFG_FILE in "$FILES[@]"; do
+    FILE_PATH="$PARENT_DIRECTORY/$CFG_FILE"
+    [ -f "$FILE_PATH" ] && source "$FILE_PATH"
+  done
+  unset FILE_PATH
+  unset CFG_FILE
+}
+
+# Since $DOTFILES_DIR is set after sourcing base/system, path needs to be calculated.
 HERE=$HOME/.zshenv
 SYSTEM_PATH="`dirname $(readlink -e -f $HERE)`/../system"
-
-for DOTFILE in "$SYSTEM_PATH/"{function,env,path,alias}; do
-	[ -f "$DOTFILE" ] && source "$DOTFILE"
-done
-unset DOTFILE
+source_system_config_files "$SYSTEM_PATH"
 
 if [ -f "$DOTFILES_DIR/.devmode" ]; then
-  for DOTFILE in "$DOTFILES_DIR/devtools/system/"{function,env,path,alias}; do
-    [ -f "$DOTFILE" ] && source "$DOTFILE"
-  done
-  unset DOTFILE
+  source_system_config_files "$DOTFILES_DIR/devtools/system"
 fi
-
-# Load non version controlled environment variables.
-local EXTRA_ENV_PATH="$EXTRA_DIR/system/env"
-[ -f "$EXTRA_ENV_PATH" ] && source "$EXTRA_ENV_PATH"
-unset EXTRA_ENV_PATH
+# Load privately version controlled config files.
+source_system_config_files "$EXTRA_DIR/system"
