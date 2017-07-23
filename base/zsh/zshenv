@@ -16,3 +16,4 @@ fi
 # Load non version controlled environment variables.
 local EXTRA_ENV_PATH="$EXTRA_DIR/system/env"
 [ -f "$EXTRA_ENV_PATH" ] && source "$EXTRA_ENV_PATH"
+unset EXTRA_ENV_PATH
