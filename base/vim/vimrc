@@ -8,11 +8,7 @@ set encoding=utf-8
 syntax on
 
 set term=screen-256color
-
-" Prevent Vundle failure when initially installing vim-colorschemes.
-if filereadable( expand("$HOME/.vim/bundle/vim-colorschemes/colors/wombat256.vim") )
-  colorscheme wombat256
-endif
+colorscheme wombat256
 
 " Show line numbers, relative to cursor.
 " Cursor shows absolute line number.

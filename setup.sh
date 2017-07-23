@@ -8,7 +8,9 @@ export DOTFILES_DIR=`dirname $(readlink -f $0)`
 ln -sfv -T "$DOTFILES_DIR/base/zsh/zshrc" ~/.zshrc
 ln -sfv -T "$DOTFILES_DIR/base/zsh/zshenv" ~/.zshenv
 
+mkdir -p ~/.vim
 ln -sfv -T "$DOTFILES_DIR/base/vim/vimrc" ~/.vimrc
+ln -sfv -T "$DOTFILES_DIR/base/vim/colors" ~/.vim/colors
 
 ln -sfv -T "$DOTFILES_DIR/base/git/gitconfig" ~/.gitconfig
 ln -sfv -T "$DOTFILES_DIR/base/git/gitignore" ~/.gitignore
@@ -24,8 +26,9 @@ source "$DOTFILES_DIR/base/system/env"
 source "$DOTFILES_DIR/base/install/locale.sh"
 source "$DOTFILES_DIR/base/install/apt.sh"
 source "$DOTFILES_DIR/base/install/oh-my-zsh.sh"
-source "$DOTFILES_DIR/base/install/vundle.sh"
+#source "$DOTFILES_DIR/base/install/vundle.sh"
 source "$DOTFILES_DIR/base/install/tmux.sh"
+
 
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
 

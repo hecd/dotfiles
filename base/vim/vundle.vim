@@ -5,7 +5,6 @@ call vundle#begin()
 
 " Let Vundle manage Vundle - required!
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-obsession'
 Plugin 'scrooloose/nerdtree'
