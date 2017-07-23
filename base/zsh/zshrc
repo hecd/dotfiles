@@ -5,7 +5,7 @@ ZSH_THEME="custom"
 # Prevent weekly auto updates.
 DISABLE_AUTO_UPDATE=true.
 
-plugins=(zsh-syntax-highlighting history-substring-search)
+plugins=(zsh-syntax-highlighting history-substring-search web-search)
 
 source $ZSH/oh-my-zsh.sh
 
