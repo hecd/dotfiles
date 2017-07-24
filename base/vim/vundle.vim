@@ -8,11 +8,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
 
-if filereadable( expand("$DOTFILES_DIR/.devmode") )
-  Plugin 'pearofducks/ansible-vim'
-  Plugin 'Valloric/YouCompleteMe'
-  Plugin 'vim-syntastic/syntastic'
-endif 
+if filereadable(expand("$DOTFILES_DIR/.devmode"))
+  source $DOTFILES_DIR/devtools/vim/vundle.vim
+endif
 
 call vundle#end()
 
