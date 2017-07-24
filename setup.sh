@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# Remove .devmode since previous installation could have been dev but now base only.
 rm -f .devmode
+if [ "$1" = "dev" ] ; then
+  touch "$DOTFILES_DIR/.devmode"
+fi
 
 export DOTFILES_DIR=`dirname $(readlink -f $0)`
 
@@ -32,7 +36,6 @@ source "$DOTFILES_DIR/base/install/tmux.sh"
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
 
 if [ "$1" = "dev" ] ; then
-  touch "$DOTFILES_DIR/.devmode"
   ln -sfv "$DOTFILES_DIR/devtools/vim/ycm/.ycm_extra_conf.py" ~
   source "$DOTFILES_DIR/devtools/install/vundle.sh"
   source "$DOTFILES_DIR/devtools/install/eclipse.sh"
