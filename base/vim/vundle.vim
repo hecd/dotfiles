@@ -6,7 +6,6 @@ call vundle#begin()
 " Let Vundle manage Vundle - required!
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'tpope/vim-obsession'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
 
