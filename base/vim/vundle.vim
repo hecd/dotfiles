@@ -7,11 +7,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-syntastic/syntastic'
 
 if filereadable( expand("$DOTFILES_DIR/.devmode") )
   Plugin 'pearofducks/ansible-vim'
   Plugin 'Valloric/YouCompleteMe'
+  Plugin 'vim-syntastic/syntastic'
 endif 
 
 call vundle#end()
