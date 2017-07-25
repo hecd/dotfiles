@@ -5,8 +5,6 @@ call vundle#begin()
 
 " Let Vundle manage Vundle - required!
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'scrooloose/nerdtree'
 
 if filereadable(expand("$DOTFILES_DIR/.devmode"))
   source $DOTFILES_DIR/devtools/vim/vundle.vim
