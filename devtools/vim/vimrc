@@ -1,0 +1,11 @@
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+
+" Save when switching pane in tmux.
+let g:tmux_navigator_save_on_switch = 1
+
+let NERDTreeIgnore = ['\.pyc$', '\.swp']
+
+let g:ycm_show_diagnostics_ui = 1
+let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'

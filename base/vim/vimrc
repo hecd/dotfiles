@@ -1,7 +1,10 @@
 set nocompatible
 
-" Load plugins.
-source $DOTFILES_DIR/base/vim/vundle.vim
+" Load plugins - must be done first.
+if filereadable(expand("$DOTFILES_DIR/.devmode"))
+  source $DOTFILES_DIR/devtools/vim/vundle.vim
+endif
+
 source $DOTFILES_DIR/base/vim/keymappings.vim
 
 set encoding=utf-8
@@ -31,17 +34,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-
-let g:ycm_show_diagnostics_ui = 1
-
-" Save when switching pane in tmux. 
-let g:tmux_navigator_save_on_switch = 1
-
-let NERDTreeIgnore = ['\.pyc$', '\.swp'] 
-
 set undofile
 set nobackup
 
@@ -52,4 +44,6 @@ silent execute '!mkdir -p $HOME/.vim/.{swaps,undo}'
 set undodir=~/.vim/.undo//
 set directory=~/.vim/.swaps//
 
-let g:ycm_global_ycm_extra_conf = '$HOME/.ycm_extra_conf.py'
+if filereadable(expand("$DOTFILES_DIR/.devmode"))
+  source $DOTFILES_DIR/devtools/vim/vimrc
+endif

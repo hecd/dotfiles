@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Remove .devmode since previous installation could have been dev but now base only.
+# Remove files possibly created by installation of devmode
 rm -f .devmode
+rm -rf ~/.vim
 if [ "$1" = "dev" ] ; then
   touch "$DOTFILES_DIR/.devmode"
 fi
@@ -30,7 +31,6 @@ source "$DOTFILES_DIR/base/system/env"
 source "$DOTFILES_DIR/base/install/locale.sh"
 source "$DOTFILES_DIR/base/install/apt.sh"
 source "$DOTFILES_DIR/base/install/oh-my-zsh.sh"
-source "$DOTFILES_DIR/base/install/vundle.sh"
 source "$DOTFILES_DIR/base/install/tmux.sh"
 
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
