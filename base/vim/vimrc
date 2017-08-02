@@ -30,6 +30,8 @@ set listchars=tab:▸\ ,eol:¬,trail:·
 " Indent when moving to next line.
 set autoindent
 
+set clipboard=unnamedplus
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
