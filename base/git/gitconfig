@@ -1,6 +1,7 @@
 [user]
   email = hecd744@gmail.com
   name = hecd
+  signingkey = 0x503C35529578D9DC
 
 [core]
   excludesfile = $HOME/.gitignore
@@ -9,3 +10,7 @@
 
 [push]
   default = simple
+[commit]
+  gpgsign = true
+[gpg]
+  program = gpg2
