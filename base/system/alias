@@ -8,6 +8,7 @@ alias ez="vim ~/.zshrc"
 alias eg="vim ~/.gitconfig"
 # Edit this file, readlink since its a symlink.
 alias ea="vim `readlink -f $0`"
+alias eax="vim $EXTRA_DIR/system/alias"
 alias epm="vim ~/.procmailrc"
 alias evl="vim ~/data/tech/learning/vim.txt"
 alias eal="vim ~/data/tech/learning/ansible.txt"
