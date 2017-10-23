@@ -1,5 +1,8 @@
 export DATA_DIR=$HOME/data
 export DOTFILES_DIR=$DATA_DIR/dotfiles
+export DOTFILES_BASE_DIR=$DOTFILES_DIR/base
+export DOTFILES_DEV_DIR=$DOTFILES_DIR/devtools
+
 export EXTRA_DIR=$DATA_DIR/extra
 export MEDIA_DIR=$DATA_DIR/Media
 
