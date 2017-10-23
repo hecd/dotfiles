@@ -38,7 +38,6 @@ source "$DOTFILES_DIR/base/install/tmux.sh"
 if [ "$1" = "dev" ] ; then
   ln -sfv "$DOTFILES_DIR/devtools/vim/ycm/.ycm_extra_conf.py" ~
   source "$DOTFILES_DIR/devtools/install/vundle.sh"
-  source "$DOTFILES_DIR/devtools/install/eclipse.sh"
   source "$DOTFILES_DIR/devtools/install/vagrant.sh"
   source "$DOTFILES_DIR/devtools/install/virtualbox.sh"
 fi
