@@ -8,6 +8,8 @@ if [ "$1" = "dev" ] ; then
 fi
 
 export DOTFILES_DIR=`dirname $(readlink -f $0)`
+# Source environment so environment variables such as $DOTFILES_DIR can be used in install scripts.
+source "$DOTFILES_DIR/base/system/env"
 
 # Create symlinks.
 ln -sfv -T "$DOTFILES_DIR/base/zsh/zshrc" ~/.zshrc
@@ -24,9 +26,6 @@ ln -sfv -T "$DOTFILES_DIR/base/tmux/tmux.conf" ~/.tmux.conf
 
 ln -sfv -T "$DOTFILES_DIR/base/rc/inputrc" ~/.inputrc
 ln -sfv -T "$DOTFILES_DIR/base/rc/procmailrc" ~/.procmailrc
-
-# Source environment so environment variables such as $DOTFILES_DIR can be used in install scripts.
-source "$DOTFILES_DIR/base/system/env"
 
 source "$DOTFILES_DIR/base/install/locale.sh"
 source "$DOTFILES_DIR/base/install/apt.sh"
