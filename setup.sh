@@ -30,7 +30,6 @@ ln -sfv -T "$DOTFILES_DIR/base/rc/procmailrc" ~/.procmailrc
 source "$DOTFILES_DIR/base/install/locale.sh"
 source "$DOTFILES_DIR/base/install/apt.sh"
 source "$DOTFILES_DIR/base/install/oh-my-zsh.sh"
-source "$DOTFILES_DIR/base/install/tmux.sh"
 
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
 
