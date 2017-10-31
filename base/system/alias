@@ -63,6 +63,7 @@ alias savefw="sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null; 
 
 alias gpg=gpg2
 alias lsla="ls -la"
+alias ff="firefox"
 ###########################################
 # Git
 ###########################################
