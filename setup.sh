@@ -12,32 +12,32 @@ export DOTFILES_DIR=`dirname $(readlink -f $0)`
 source "$DOTFILES_DIR/base/system/env"
 
 # Create symlinks.
-ln -sfv -T "$DOTFILES_DIR/base/zsh/zshrc" ~/.zshrc
-ln -sfv -T "$DOTFILES_DIR/base/zsh/zshenv" ~/.zshenv
+ln -sfv -T "$DOTFILES_BASE_DIR/zsh/zshrc" ~/.zshrc
+ln -sfv -T "$DOTFILES_BASE_DIR/zsh/zshenv" ~/.zshenv
 
 mkdir -p ~/.vim
-ln -sfv -T "$DOTFILES_DIR/base/vim/vimrc" ~/.vimrc
-ln -sfv -T "$DOTFILES_DIR/base/vim/colors" ~/.vim/colors
+ln -sfv -T "$DOTFILES_BASE_DIR/vim/vimrc" ~/.vimrc
+ln -sfv -T "$DOTFILES_BASE_DIR/vim/colors" ~/.vim/colors
 
-ln -sfv -T "$DOTFILES_DIR/base/git/gitconfig" ~/.gitconfig
-ln -sfv -T "$DOTFILES_DIR/base/git/gitignore" ~/.gitignore
+ln -sfv -T "$DOTFILES_BASE_DIR/git/gitconfig" ~/.gitconfig
+ln -sfv -T "$DOTFILES_BASE_DIR/git/gitignore" ~/.gitignore
 
-ln -sfv -T "$DOTFILES_DIR/base/tmux/tmux.conf" ~/.tmux.conf
+ln -sfv -T "$DOTFILES_BASE_DIR/tmux/tmux.conf" ~/.tmux.conf
 
-ln -sfv -T "$DOTFILES_DIR/base/rc/inputrc" ~/.inputrc
-ln -sfv -T "$DOTFILES_DIR/base/rc/procmailrc" ~/.procmailrc
+ln -sfv -T "$DOTFILES_BASE_DIR/rc/inputrc" ~/.inputrc
+ln -sfv -T "$DOTFILES_BASE_DIR/rc/procmailrc" ~/.procmailrc
 
-source "$DOTFILES_DIR/base/install/locale.sh"
-source "$DOTFILES_DIR/base/install/apt.sh"
-source "$DOTFILES_DIR/base/install/oh-my-zsh.sh"
+source "$DOTFILES_BASE_DIR/install/locale.sh"
+source "$DOTFILES_BASE_DIR/install/apt.sh"
+source "$DOTFILES_BASE_DIR/install/oh-my-zsh.sh"
 
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
 
 if [ "$1" = "dev" ] ; then
-  ln -sfv "$DOTFILES_DIR/devtools/vim/ycm/.ycm_extra_conf.py" ~
-  source "$DOTFILES_DIR/devtools/install/vundle.sh"
-  source "$DOTFILES_DIR/devtools/install/vagrant.sh"
-  source "$DOTFILES_DIR/devtools/install/virtualbox.sh"
+  ln -sfv "$DOTFILES_DEV_DIR/vim/ycm/.ycm_extra_conf.py" ~
+  source "$DOTFILES_DEV_DIR/install/vundle.sh"
+  source "$DOTFILES_DEV_DIR/install/vagrant.sh"
+  source "$DOTFILES_DEV_DIR/install/virtualbox.sh"
 fi
 
 echo

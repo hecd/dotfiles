@@ -2,10 +2,10 @@ set nocompatible
 
 " Load plugins - must be done first.
 if filereadable(expand("$DOTFILES_DIR/.devmode"))
-  source $DOTFILES_DIR/devtools/vim/vundle.vim
+  source $DOTFILES_DEV_DIR/vim/vundle.vim
 endif
 
-source $DOTFILES_DIR/base/vim/keymappings.vim
+source $DOTFILES_BASE_DIR/vim/keymappings.vim
 
 set encoding=utf-8
 syntax on
@@ -47,5 +47,5 @@ set undodir=~/.vim/.undo//
 set directory=~/.vim/.swaps//
 
 if filereadable(expand("$DOTFILES_DIR/.devmode"))
-  source $DOTFILES_DIR/devtools/vim/vimrc
+  source $DOTFILES_DEV_DIR/vim/vimrc
 endif
