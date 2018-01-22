@@ -2,6 +2,7 @@ export DATA_DIR=$HOME/data
 export DOTFILES_DIR=$DATA_DIR/dotfiles
 export DOTFILES_BASE_DIR=$DOTFILES_DIR/base
 export DOTFILES_DEV_DIR=$DOTFILES_DIR/devtools
+export SCRATCH_DIR=$DATA_DIR/scratch
 
 export EXTRA_DIR=$DATA_DIR/extra
 export MEDIA_DIR=$DATA_DIR/Media
@@ -9,7 +10,7 @@ export MEDIA_DIR=$DATA_DIR/Media
 export LOCAL_DIR=$HOME/local
 export PACKER_CACHE_DIR=$LOCAL_DIR/packer
 export VAGRANT_HOME=$LOCAL_DIR/vagrant
-export ISO_DIR=$LOCAL_DIR/ISO
+export ISO_DIR=$DATA_DIR/ISO
 
 export ANSIBLE_CACHE_DIR=$LOCAL_DIR/ansible
 export ANSIBLE_ROLES_CACHE_DIR=$ANSIBLE_CACHE_DIR/roles
