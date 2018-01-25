@@ -1,18 +1,30 @@
+#!/bin/bash
 export DATA_DIR=$HOME/data
-export DOTFILES_DIR=$DATA_DIR/dotfiles
+export RINGS=$DATA_DIR/rings
+
+export RING0=$RINGS/0
+export RING1=$RINGS/1
+export RING2=$RINGS/2
+export RING3=$RINGS/3
+export RING4=$RINGS/4
+export RING5=$RINGS/5
+
+export DOTFILES_DIR=$RING1/dotfiles
 export DOTFILES_BASE_DIR=$DOTFILES_DIR/base
 export DOTFILES_DEV_DIR=$DOTFILES_DIR/devtools
-export SCRATCH_DIR=$DATA_DIR/scratch
+export DOTFILES=$DOTFILES_DIR
 
-export EXTRA_DIR=$DATA_DIR/extra
-export MEDIA_DIR=$DATA_DIR/Media
+export SCRATCH_DIR=$RING2/scratch
+export EXTRA_DIR=$RING1/extra
+export MEDIA_DIR=$RING3/Media
 
+# Environments referring local paths only (never shared).
 export LOCAL_DIR=$HOME/local
 export PACKER_CACHE_DIR=$LOCAL_DIR/packer
 export VAGRANT_HOME=$LOCAL_DIR/vagrant
 export ISO_DIR=$DATA_DIR/ISO
-
 export ANSIBLE_CACHE_DIR=$LOCAL_DIR/ansible
 export ANSIBLE_ROLES_CACHE_DIR=$ANSIBLE_CACHE_DIR/roles
 
+# Local machine only
 export MACHINE_SPECIFIC_DIR=$EXTRA_DIR/machine_specific/`hostname`
