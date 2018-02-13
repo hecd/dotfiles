@@ -20,6 +20,8 @@ export MEDIA_DIR=$RING3/Media
 
 # Environments referring local paths only (never shared).
 export LOCAL_DIR=$HOME/local
+# Contains user-specific programs
+export LOCAL_BIN_DIR=$LOCAL_DIR/bin
 export PACKER_CACHE_DIR=$LOCAL_DIR/packer
 export VAGRANT_HOME=$LOCAL_DIR/vagrant
 export ISO_DIR=$RING5/ISO
