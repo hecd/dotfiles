@@ -22,7 +22,7 @@ export MEDIA_DIR=$RING3/Media
 export LOCAL_DIR=$HOME/local
 export PACKER_CACHE_DIR=$LOCAL_DIR/packer
 export VAGRANT_HOME=$LOCAL_DIR/vagrant
-export ISO_DIR=$DATA_DIR/ISO
+export ISO_DIR=$RING5/ISO
 export ANSIBLE_CACHE_DIR=$LOCAL_DIR/ansible
 export ANSIBLE_ROLES_CACHE_DIR=$ANSIBLE_CACHE_DIR/roles
 
