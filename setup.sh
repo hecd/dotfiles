@@ -35,7 +35,6 @@ if [ "$1" = "dev" ] ; then
   ln -sfv "$DOTFILES_DEV_DIR/vim/ycm/.ycm_extra_conf.py" ~
   source "$DOTFILES_DEV_DIR/install/vundle.sh"
   source "$DOTFILES_DEV_DIR/install/vagrant.sh"
-  source "$DOTFILES_DEV_DIR/install/virtualbox.sh"
 fi
 
 echo
