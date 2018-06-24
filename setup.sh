@@ -7,10 +7,8 @@ if [ "$1" = "dev" ] ; then
   touch "$DOTFILES_DIR/.devmode"
 fi
 
-export DOTFILES_DIR=`dirname $(readlink -f $0)`
-# Source environment so environment variables such as $DOTFILES_DIR can be used in install scripts.
-source "$DOTFILES_DIR/base/system/env"
-mkdir -p "$RINGS"/{0..5}
+# Source environment config, enabling use of environment variables in install scripts.
+source "`dirname $(readlink -f $0)`/base/system/env"
 
 # Create symlinks.
 ln -sfv -T "$DOTFILES_BASE_DIR/zsh/zshrc" ~/.zshrc
