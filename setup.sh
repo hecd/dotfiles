@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# Remove files possibly created by installation of devmode
-rm -f .devmode
 rm -rf ~/.vim
-if [ "$1" = "dev" ] ; then
-  touch "$DOTFILES_DIR/.devmode"
-fi
 
 # Source environment config, enabling use of environment variables in install scripts.
 source "`dirname $(readlink -f $0)`/base/system/env"
@@ -28,12 +23,6 @@ source "$DOTFILES_BASE_DIR/install/apt.sh"
 source "$DOTFILES_BASE_DIR/install/oh-my-zsh.sh"
 
 [ -x "$EXTRA_DIR/setup.sh" ] && source $EXTRA_DIR/setup.sh
-
-if [ "$1" = "dev" ] ; then
-  ln -sfv "$DOTFILES_DEV_DIR/vim/ycm/.ycm_extra_conf.py" ~
-  source "$DOTFILES_DEV_DIR/install/vundle.sh"
-  source "$DOTFILES_DEV_DIR/install/vagrant.sh"
-fi
 
 echo
 echo

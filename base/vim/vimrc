@@ -1,12 +1,6 @@
 set nocompatible
 
-" Load plugins - must be done first.
-if filereadable(expand("$DOTFILES_DIR/.devmode"))
-  source $DOTFILES_DEV_DIR/vim/vundle.vim
-endif
-
 source $DOTFILES_BASE_DIR/vim/keymappings.vim
-
 set encoding=utf-8
 syntax on
 
@@ -32,10 +26,6 @@ set autoindent
 
 set clipboard=unnamedplus
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 set undofile
 set nobackup
 
@@ -45,7 +35,3 @@ silent execute '!mkdir -p $HOME/.vim/.{swaps,undo}'
 " Trailing // creates matching absolute path in directory.
 set undodir=~/.vim/.undo//
 set directory=~/.vim/.swaps//
-
-if filereadable(expand("$DOTFILES_DIR/.devmode"))
-  source $DOTFILES_DEV_DIR/vim/vimrc
-endif

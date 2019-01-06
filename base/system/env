@@ -2,15 +2,10 @@
 
 export DATA_DIR=/mnt/webdav
 export RINGS=$DATA_DIR
-export RING0=$RINGS/ring0
 export RING1=$RINGS/ring1
 export RING2=$RINGS/ring2
-export RING3=$RINGS/ring3
-export RING4=$RINGS/ring4
-export RING5=$RINGS/ring5
 export DOTFILES_DIR=$RING1/dotfiles
 export DOTFILES_BASE_DIR=$DOTFILES_DIR/base
-export DOTFILES_DEV_DIR=$DOTFILES_DIR/devtools
 export DOTFILES=$DOTFILES_DIR
 export SCRATCH_DIR=$RING2/root/scratch
 export EXTRA_DIR=$RING1/extra
@@ -20,7 +15,3 @@ export LOCAL_DIR=$HOME/local
 # Contains user-specific programs
 export LOCAL_BIN_DIR=$LOCAL_DIR/bin
 export PACKER_CACHE_DIR=$LOCAL_DIR/packer
-export VAGRANT_HOME=$LOCAL_DIR/vagrant
-export ISO_DIR=$RING5/ISO
-# Local machine only
-export MACHINE_SPECIFIC_DIR=$EXTRA_DIR/machine_specific/`hostname`

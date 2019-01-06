@@ -154,3 +154,11 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+
+# Lock screen binding
+bindsym $mod+Control+l exec i3lock
+exec --no-startup-id xautolock -time 1 -locker i3lock
+
+# Clipboard management, typically used to sync primary and clipboard content.
+exec clipit
