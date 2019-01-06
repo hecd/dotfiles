@@ -17,6 +17,8 @@ ln -sfv -T "$DOTFILES_BASE_DIR/git/gitignore" ~/.gitignore
 ln -sfv -T "$DOTFILES_BASE_DIR/tmux/tmux.conf" ~/.tmux.conf
 ln -sfv -T "$DOTFILES_BASE_DIR/rc/inputrc" ~/.inputrc
 ln -sfv -T "$DOTFILES_BASE_DIR/rc/procmailrc" ~/.procmailrc
+ln -sfv -T "$DOTFILES_BASE_DIR/rc/clipitrc" ~/.config/clipit/clipitrc
+ln -sfv -T "$DOTFILES_BASE_DIR/x11/xprofile" ~/.xprofile
 
 source "$DOTFILES_BASE_DIR/install/locale.sh"
 source "$DOTFILES_BASE_DIR/install/apt.sh"
