@@ -11,7 +11,7 @@ function source_system_config_files
   unset CFG_FILE
 }
 
-# Since $DOTFILES_DIR is set after sourcing base/system, path needs to be calculated.
+# Since $DOTFILES_DIR is set after sourcing, path needs to be calculated.
 HERE=$HOME/.zshenv
 SYSTEM_PATH="`dirname $(readlink -e -f $HERE)`/../system"
 source_system_config_files "$SYSTEM_PATH"

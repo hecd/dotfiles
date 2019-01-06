@@ -5,7 +5,6 @@ export RINGS=$DATA_DIR
 export RING1=$RINGS/ring1
 export RING2=$RINGS/ring2
 export DOTFILES_DIR=$RING1/dotfiles
-export DOTFILES_BASE_DIR=$DOTFILES_DIR/base
 export DOTFILES=$DOTFILES_DIR
 export SCRATCH_DIR=$RING2/root/scratch
 export EXTRA_DIR=$RING1/extra

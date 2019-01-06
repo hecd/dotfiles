@@ -1,6 +1,6 @@
 set nocompatible
 
-source $DOTFILES_BASE_DIR/vim/keymappings.vim
+source $DOTFILES_DIR/vim/keymappings.vim
 set encoding=utf-8
 syntax on
 
