@@ -1,21 +1,13 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_CUSTOM=$DOTFILES_DIR/zsh/customization/
-ZSH_THEME="custom"
-
-if [[ -n $SSH_CONNECTION ]]; then
-  ZSH_THEME="custom_ssh"
-else
-  ZSH_THEME="custom"
-fi
+ZSH_THEME="agnoster"
 
 # Prevent weekly auto updates.
 DISABLE_AUTO_UPDATE=true
 
-plugins=(zsh-syntax-highlighting history-substring-search web-search)
+plugins=(history-substring-search web-search vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-export TERM="xterm-256color"
 export EDITOR="vim"
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
@@ -24,7 +16,10 @@ export VISUAL=$EDITOR
 setopt RM_STAR_WAIT
 
 # Use spelling correction.
-setopt CORRECT	
+setopt CORRECT
+
+# Prevent duplicates in history
+setopt hist_ignore_all_dups hist_save_nodups
 
 # Disable less history.
 LESSHISTFILE=/dev/null
@@ -33,3 +28,9 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 umask 007
+
+eval `dircolors ~/.dir_colors/dircolors`
+# Only show cwd in terminal
+prompt_context() {}
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
