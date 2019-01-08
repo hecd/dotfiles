@@ -17,6 +17,7 @@ ln -sfv -T "$DOTFILES_DIR/git/gitignore" ~/.gitignore
 ln -sfv -T "$DOTFILES_DIR/tmux/tmux.conf" ~/.tmux.conf
 ln -sfv -T "$DOTFILES_DIR/rc/inputrc" ~/.inputrc
 ln -sfv -T "$DOTFILES_DIR/rc/procmailrc" ~/.procmailrc
+ln -sfv -T "$DOTFILES_DIR/i3/config" ~/.config/i3/config
 ln -sfv -T "$DOTFILES_DIR/rc/clipitrc" ~/.config/clipit/clipitrc
 ln -sfv -T "$DOTFILES_DIR/x11/xprofile" ~/.xprofile
 
