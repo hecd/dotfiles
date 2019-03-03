@@ -4,7 +4,7 @@ ZSH_THEME="agnoster"
 # Prevent weekly auto updates.
 DISABLE_AUTO_UPDATE=true
 
-plugins=(history-substring-search web-search vi-mode colored-man-pages)
+plugins=(history-substring-search web-search vi-mode colored-man-pages docker-compose docker-machine docker)
 
 source $ZSH/oh-my-zsh.sh
 
