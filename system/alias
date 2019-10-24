@@ -8,7 +8,6 @@ alias eg="vim ~/.gitconfig"
 # Edit this file, readlink since its a symlink.
 alias ea="vim `readlink -f $0`"
 alias eax="vim $EXTRA_DIR/system/alias"
-alias epm="vim ~/.procmailrc"
 alias evl="vim ~/data/tech/learning/vim.txt"
 alias eal="vim ~/data/tech/learning/ansible.txt"
 alias eh="sudo vim /etc/hosts"
@@ -38,16 +37,12 @@ alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 
-alias gnucash="LANGUAGE=sv_SE.UTF-8 LANG=sv_SE.UTF-8 gnucash"
 alias rz="source ~/.zshrc"
 alias serve="python -m SimpleHTTPServer"
-alias del="sed '/^$/d'"
 alias week="echo Current week number: $(date +%V)"
 alias si="sudo apt-get install"
 alias sug="sudo apt-get update && sudo apt-get -y upgrade"
 alias cpwd="pwd | xclip"
-
-alias without-comments="grep -o '^[^#]*' "
 
 alias savefw="sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null; sudo ip6tables-save | sudo tee /etc/iptables/rules.v6 > /dev/null;"
 
