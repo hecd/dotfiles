@@ -12,7 +12,7 @@ alias evl="vim ~/data/tech/learning/vim.txt"
 alias eal="vim ~/data/tech/learning/ansible.txt"
 alias eh="sudo vim /etc/hosts"
 alias esshconfig="vim ~/.ssh/config"
-alias todo="vim $SCRATCH_DIR/TODO.txt"
+alias todo="vim $RING1/TODO.txt"
 ###########################################
 # Tmux
 ###########################################
