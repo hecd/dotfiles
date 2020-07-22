@@ -34,7 +34,3 @@ eval `dircolors ~/.dir_colors/dircolors`
 prompt_context() {}
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
- export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
-fi
