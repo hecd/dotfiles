@@ -29,6 +29,5 @@ export GPG_TTY
 
 umask 007
 
-eval `dircolors ~/.dir_colors/dircolors`
 # Only show cwd in terminal
 prompt_context() {}
