@@ -7,8 +7,9 @@ rm -rf ~/.vim
 mkdir -p ~/.vim
 
 source "$DOTFILES_DIR/install-scripts/common.sh"
-# TODO: execute distro specific package install "$DOTFILES_DIR/install-scripts/{distro}/install-packages.sh"
-source "$DOTFILES_DIR/install-scripts/debian/install-packages.sh"
+
+DISTRO=`awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }'`
+source "$DOTFILES_DIR/install-scripts/$DISTRO/install-packages.sh"
 source "$DOTFILES_DIR/install-scripts/create-symlinks.sh"
 
 echo
