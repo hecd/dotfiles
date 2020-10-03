@@ -1,6 +1,6 @@
 # Description
-This repository should be cloned into the directory ~/data/dotfiles.
-Private information and scripts should be placed in ~/data/extra which contains the file "setup.sh". This file is executed by this repostiry's setup.sh if extra 'setup.sh' exists.
+This repository should be cloned into directory targetted by environment variable DOTFILES_DIR. Typically ~/data/dotfiles.
+Private information and scripts should be placed in directory targetted by environment variable EXTRA_DIR. Typically ~/data/extra.
 
 # Usage
 git clone https://github.com/hecd/dotfiles.git
