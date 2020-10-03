@@ -1,0 +1,8 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.associations": {
+        "Vagrantfile": "ruby"
+    },
+    "vim.useSystemClipboard": true
+}
