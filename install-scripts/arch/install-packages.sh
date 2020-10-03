@@ -1,0 +1,1 @@
+echo "pacman install packages for me, please"
