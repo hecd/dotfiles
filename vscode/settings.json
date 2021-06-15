@@ -4,5 +4,6 @@
     "files.associations": {
         "Vagrantfile": "ruby"
     },
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "window.zoomLevel": 3
 }
