@@ -46,7 +46,6 @@ alias cpwd="pwd | xclip"
 
 alias savefw="sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null; sudo ip6tables-save | sudo tee /etc/iptables/rules.v6 > /dev/null;"
 
-alias gpg=gpg2
 alias lsla="ls -la"
 alias ff="firefox"
 ###########################################

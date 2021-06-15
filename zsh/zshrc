@@ -29,5 +29,13 @@ export GPG_TTY
 
 umask 007
 
+# zsh parameter completion for the dotnet CLI
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+  reply=( "${(ps:\n:)completions}" )
+}
+compctl -K _dotnet_zsh_complete dotnet
+
 # Only show cwd in terminal
 prompt_context() {}
