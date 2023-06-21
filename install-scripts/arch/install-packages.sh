@@ -1,1 +1,1 @@
-echo "pacman install packages for me, please"
+sudo pacman -Syu aspnet-runtime autoconf automake base bison bluez-utils code docker dolphin dotnet-sdk fakeroot firefox grub gufw gwenview htop intel-ucode kdeplasma-addons libreoffice-fresh linux-headers logwatch make man-db nano neofetch net-tools netctl nodejs openssh patch pkgconf plasma-desktop plasma-pa reflector sddm spotify sudo syncthing the_silver_searcher tmux traceroute tree unzip usbutils vim vlc yubikey-manager zsh-completions
