@@ -1,11 +1,10 @@
 #!/bin/bash
 
-export RINGS=$HOME/syncthing
-export RING1=$RINGS/ring1
-export RING2=$RINGS/ring2
-export DOTFILES_DIR=$RING1/dotfiles
+export RING1=$HOME/syncthing/ring1
+export RING2_ROOT="$SYNCTHING_DATA/ring2 Root"
+export SRC=$HOME/src
+export DOTFILES_DIR=$SRC/github/dotfiles
 export DOTFILES=$DOTFILES_DIR
-export SCRATCH_DIR=$RING2/root/scratch
 export EXTRA_DIR=$RING1/extra
 export MEDIA_DIR=$RING1/Media
 # Environments referring local paths only (never shared).
