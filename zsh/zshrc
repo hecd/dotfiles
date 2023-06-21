@@ -5,6 +5,7 @@ ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE=false
 
 plugins=(zsh-autosuggestions zsh-syntax-highlighting history-substring-search web-search colored-man-pages docker-compose docker-machine docker)
+autoload -Uz compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
