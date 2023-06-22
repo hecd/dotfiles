@@ -5,7 +5,7 @@ export RING2_ROOT="$SYNCTHING_DATA/ring2 Root"
 export SRC=$HOME/src
 export DOTFILES_DIR=$SRC/github/dotfiles
 export DOTFILES=$DOTFILES_DIR
-export EXTRA_DIR=$RING1/extra
+export EXTRA_DIR=$SRC/gitlab/dotfiles-extra
 export MEDIA_DIR=$RING1/Media
 # Environments referring local paths only (never shared).
 export LOCAL_DIR=$HOME/local
