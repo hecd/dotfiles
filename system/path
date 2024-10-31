@@ -1,6 +1,7 @@
 is-executable getconf && PATH=$(`command -v getconf` PATH)
 
 # Prepend new items to path (if target directory exists)
+prepend-path "$EXTRA_DIR/scripts/media"
 prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
@@ -10,6 +11,7 @@ prepend-path "/sbin"
 prepend-path "/usr/sbin"
 prepend-path "/usr/local/sbin"
 prepend-path "$HOME/.local/bin"
+prepend-path "$HOME/bin"
 prepend-path "/usr/bin/vendor_perl"
 prepend-path "$HOME/.dotnet/tools"
 prepend-path "$ANDROID_HOME/emulator"
